@@ -1,35 +1,29 @@
 {
   "name": "hieuwy",
   "version": "1.0.0",
-  "description": "A text editor that meets the PWA criteria and feature a number of data persistence techniques that serve as redundancy in case of options is not supported by the browser.  The application will also function offline",
   "main": "server.js",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
-    "start": "npm run build && cd server && node server.js",
-    "server": "cd server nodemon server.js --ignore client",
-    "build": "cd client && npm run build",
-    "install": "cd client && npm install",
-    "client": "cd client && npm start"
+    "server": "nodemon server.js --ignore client",
+    "start": "node server.js"
   },
   "keywords": [],
-  "author": "Nicholas Do ",
+  "author": "Nicholas Do",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "if-env": "^1.0.4",
-    "node": "19.1.0"
+    "express": "^4.18.2",
+    "node": "^19.1.0",
+    "pkg": "^5.8.0"
   },
   "devDependencies": {
-    "concurrently": "^5.2.0",
-    "nodemon": "^1.4.1"
+    "nodemon": "^2.0.4"
   },
+  "description": "Module 19 Challenge: PWA-Text-Editor",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hieuwy/PWA-text-Editor"
+    "url": "git+https://github.com/hieuwy/PWA-text-editor.git"
   },
   "bugs": {
-    "url": "https://github.com/hieuwy/PWA-Text-Editor/issues"
+    "url": "https://github.com/hieuwy/PWA-text-editor/issues"
   },
-  "homepage": "https://github.com/hieuwy/PWA-Text-Editor#readme"
+  "homepage": "https://github.com/hieuwy/PWA-text-editor#readme"
 }
